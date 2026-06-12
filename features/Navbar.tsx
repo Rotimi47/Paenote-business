@@ -52,14 +52,14 @@ export default function Navbar() {
       </div>
 
       <div
-         className={ `lg:hidden absolute top-16 right-4 w-52 z-50 transition-all duration-300 ${
+         className={ `lg:hidden absolute top-16 right-4 w-52 z-50 transition-all duration-300 bg-black p-3 rounded-xl  ${
             mobileDrawerOpen 
               ? "opacity-100 translate-x-0 pointer-events-auto"
               : "opacity-0 translate-x-4  pointer-events-none" 
             }`}
       >
-        <div>
-           <ul>
+        <div className="">
+           <ul className="flex flex-col gap-5">
               <li> <Link  href="/features" onClick={() => setMobileDrawerOpen(false)}>Features</Link></li>
                            
               <li> <Link href="/pricing" onClick={() => setMobileDrawerOpen(false)}>Pricing</Link></li>
