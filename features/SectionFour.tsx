@@ -82,28 +82,55 @@ export default function SectionFour() {
             </div>
             <div className="lg:flex w-full mx-auto max-w-4xl gap-4 hidden ">
 
-                <div className="bg-orange-01 p-3 flex flex-col justify-between w-110 h-110 rounded-[37px]  clip-card-tr">
+                <div
+                    className="p-3 flex flex-col justify-between w-110 h-110 rounded-[37px]  bg-cover bg-center bg-no-repeat"
+                    style={{
+                        backgroundImage: "url('/images/press-card-orange.svg')",
+                    }}
+                    >
                     <div className="w-50 p-1.5">
                         <span className="flex size-10.5 items-center justify-center rounded-full bg-[rgba(0,0,0,0.5)]">
-                            <IconArrowUpRight className="size-5 text-brand-pure" />
+                        <IconArrowUpRight className="size-5 text-brand-pure" />
                         </span>
-                    </div>
-                    <div className="bg-neutral-950 rounded-[27px] flex flex-col gap-6.5 p-6.5">
-                        <Image src="/icons/tcWhite.svg" alt="TC logo" width={24} height={24} priority/>
-                        <p className="font-body text-neutral-300 font-medium text-15 leading-140 tracking-75">Bank Direct on Paenote: Converting crypto to naira without stress</p>
-                    </div>
-                </div>
-                <div className="bg-purple-01 p-3 flex flex-col justify-between w-110 h-110 rounded-[37px] clip-card">
-                    <div className="w-full pt-1.5 flex justify-end">
-                        <span className="flex size-10.5 items-center justify-center rounded-full bg-[rgba(0,0,0,0.5)]">
-                             <IconArrowUpRight className="size-5 text-brand-pure" />
-                        </span>
-                    </div>
-                    <div className="bg-neutral-950 rounded-[27px] flex flex-col gap-6.5 p-6.5">
-                        <Image src="/icons/condiaWhite.svg" alt="TC logo" width={115} height={20} priority/>
-                        <p className="font-body text-neutral-300 font-medium text-15 leading-140 tracking-75">Bank Direct on Paenote: Converting crypto to naira without stress</p>
                     </div>
 
+                    <div className="bg-neutral-950 rounded-[27px] flex flex-col gap-6.5 p-6.5">
+                        <Image
+                        src="/icons/tcWhite.svg"
+                        alt="TC logo"
+                        width={24}
+                        height={24}
+                        />
+
+                        <p className="font-body text-neutral-300 font-medium text-15 leading-140 tracking-75">
+                        Bank Direct on Paynote: Converting crypto to naira without stress
+                        </p>
+                    </div>
+                </div>
+                    <div
+                    className="p-3 flex flex-col justify-between w-110 h-110 rounded-[37px]  overflow-hidden bg-cover bg-center bg-no-repeat"
+                    style={{
+                        backgroundImage: "url('/images/press-card-purple.svg')",
+                    }}
+                    >
+                    <div className="w-full pt-1.5 flex justify-end">
+                        <span className="flex size-10.5 items-center justify-center rounded-full bg-[rgba(0,0,0,0.5)]">
+                        <IconArrowUpRight className="size-5 text-brand-pure" />
+                        </span>
+                    </div>
+
+                    <div className="bg-neutral-950 rounded-[27px] flex flex-col gap-6.5 p-6.5">
+                        <Image
+                        src="/icons/condiaWhite.svg"
+                        alt="Condia logo"
+                        width={115}
+                        height={20}
+                        />
+
+                        <p className="font-body text-neutral-300 font-medium text-15 leading-140 tracking-75">
+                        Bank Direct on Paynote: Converting crypto to naira without stress
+                        </p>
+                    </div>
                 </div>
                
                 
@@ -117,7 +144,7 @@ export default function SectionFour() {
                 <div className="bg-[#E0E0E0] w-5.25 h-66.5"></div>
 
 
-                <div className="absolute -top-60 left-1/2 -translate-x-1/2 border border-black ">
+                <div className="absolute -top-60 left-1/2 -translate-x-1/2  ">
                     <Image src="/images/qrCode.svg" alt="QR Code" width={500} height={500} priority />
                 </div>
 

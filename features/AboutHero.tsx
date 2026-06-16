@@ -14,12 +14,17 @@ export default function AboutHero() {
                 label="Get started"
                 className="hidden lg:flex gap-4"
             />
-            <Download
-                label="Download app"
-                className="gap-4 lg:bg-neutral-700 lg:text-brand-pure "
-                iconClassname="lg:text-neutral-300"
-              />
-            </div>
+             <div>       
+                <div className="lg:hidden">
+                    <Download variant="light" />
+                </div>
+
+                
+                <div className="hidden lg:block">
+                    <Download variant="dark" />
+                </div>
+              </div>
+          </div>
         </div>
         <div className="w-full mx-auto max-w-300">
           <Image src="/images/ghanaMustgo.svg" alt="About Hero Image" width={1200} height={700} priority/>

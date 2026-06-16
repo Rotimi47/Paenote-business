@@ -16,11 +16,19 @@ export default function SectionThree() {
                     className="bg-brand-pure text-neutral-950 font-body gap-4 hidden lg:flex"
                     iconClassname="text-neutral-500"
                     />
-                    <Download
-                    label="Download app"
-                    className="bg-brand-pure text-neutral-950 lg:bg-neutral-700 lg:text-brand-pure"
-                    iconClassname="text-neutral-500"
-                    />
+
+                    <div>
+                        <div className="lg:hidden">
+                            <Download
+                                className="bg-brand-pure text-neutral-950 lg:bg-neutral-700 lg:text-brand-pure"
+                            />
+                        </div>
+
+                        
+                        <div className="hidden lg:block">
+                            <Download variant="dark" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -68,11 +76,18 @@ export default function SectionThree() {
                         className="bg-brand-pure text-neutral-950 font-body gap-4 hidden lg:flex"
                         iconClassname="text-neutral-500"
                         />
-                        <Download
-                        label="Download app"
-                        className="bg-brand-pure text-neutral-950 lg:bg-neutral-700 lg:text-brand-pure"
-                        iconClassname="text-neutral-500"
-                        />
+                    <div>
+                        <div className="lg:hidden">
+                            <Download
+                                className="bg-brand-pure text-neutral-950 lg:bg-neutral-700 lg:text-brand-pure"
+                            />
+                        </div>
+
+                        
+                        <div className="hidden lg:block">
+                            <Download variant="dark" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="flex flex-col gap-12 lg:flex-row justify-center"  >

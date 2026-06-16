@@ -1,46 +1,82 @@
-import {IconBrandGooglePlay} from "@tabler/icons-react"
-import Image from "next/image";
-import { cn } from "@/utils";
+import { IconBrandGooglePlay } from "@tabler/icons-react";
+import { cn } from "@/utils/cn";
 
 
-
-export interface DownloadProps {
-  label: string;
+interface DownloadAppButtonProps {
   className?: string;
-   variant?: 'dark' | 'light';
-  onClick?: () => void;
-  iconClassname?: string;
+  textClassName?: string;
+  dividerClassName?: string;
+  variant?: "light" | "dark" | "hero";
 }
 
-export const Download = ({
-  label,
-  onClick,
+const variantStyles = {
+  light: {
+    button: "bg-neutral-175",
+    text: "text-neutral-950",
+    icon:"text-neutral-550",
+    divider: "bg-neutral-250",
+  },
+  dark: {
+    button: "bg-neutral-700",
+    text: "text-brand-pure",
+     icon:"text-neutral-300",
+    divider: "bg-neutral-600",
+  },
+  hero: {
+    button: "bg-brand-main-02",
+    text: "text-brand-pure",
+     icon:"text-brand-main-03",
+    divider: "bg-brand-main-04",
+  },
+} as const;
+
+export default function Download({
   className,
-  variant = 'dark',
-  iconClassname,
-}: DownloadProps) => {
-  const light = variant === 'light';
+  textClassName,
+  dividerClassName,
+  variant = "light",
+}: DownloadAppButtonProps) {
+  const styles = variantStyles[variant];
 
   return (
     <button
-     onClick={onClick}
-     className={`flex gap-2 py-2.5 pl-2.5 pr-2 rounded-md text-brand-pure font-body font-semibold bg-brand-main-01 ${className} items-center`}
+      type="button"
+      className={cn(
+        "inline-flex h-10.5 items-center gap-4 rounded-md py-2.5 pl-2.5 pr-2",
+        styles.button,
+        className
+      )}
     >
-        {label}
-        <IconBrandGooglePlay
-        className={`text-brand-main-03 font-body text-15 ${iconClassname}`}
+      <span
+        className={cn(
+          "font-body  whitespace-nowrap text-15 font-semibold leading-[1.4] tracking-[-0.1125px]",
+          styles.text,
+          textClassName
+        )}
+      >
+        Download app
+      </span>
+
+      <span className="flex items-center gap-2">
+        <IconBrandGooglePlay className={cn("w-4.5 h-4.5",styles.icon,)} />
+
+        <span
+          className={cn(
+            "h-3.5 w-px rounded-[5px]",
+            styles.divider,
+            dividerClassName
+          )}
         />
-         <span
-            className={cn(
-              'h-3.5 w-px rounded-[5px]',
-              light ? 'bg-neutral-250' : 'bg-neutral-600',
-            )}
-          />
-         <Image src="/icons/apple.svg" alt="appstore" width={18} height={18} priority className="color-neutral-500"/> 
 
+         <img
+          src="/icons/apple.svg"
+          alt="Apple App Store"
+          className="w-4.5 h-4.5 invert sepia saturate-200 hue-rotate-300"
+        /> 
+
+       
+
+      </span>
     </button>
-  )
+  );
 }
-
-
-export default Download

@@ -17,11 +17,17 @@ export default function Hero() {
                         label="Get started"
                         className="hidden lg:flex gap-4"
                     />
-                    <Download
-                        label="Download app"
-                        className="gap-4 lg:bg-neutral-175 lg:text-neutral-950 "
-                        iconClassname="lg:text-neutral-500"
-                    />
+                    <div>
+                        
+                        <div className="lg:hidden">
+                            <Download variant="hero" />
+                        </div>
+
+                        
+                        <div className="hidden lg:block">
+                            <Download variant="light" />
+                        </div>
+                    </div>
                 </div>
 
             </div>

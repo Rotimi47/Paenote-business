@@ -134,12 +134,11 @@
         #39CAE5 100%
     );
 
-    --gradient-user:
-      linear-gradient(
-      180deg,
-      rgba(0, 92, 109, 0) 0%,
-      #005C6D 100%
-   );
+    --gradient-user: linear-gradient(
+    180deg,
+    rgba(0, 92, 109, 0.15) 0%,
+    rgba(0, 92, 109, 0.9) 100%
+  );
 
    --gradient-about:
     linear-gradient(
@@ -220,6 +219,7 @@
    
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
   }
   .bg-about{

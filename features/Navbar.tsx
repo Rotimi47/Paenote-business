@@ -41,7 +41,7 @@ export default function Navbar() {
       <div>
         <GetStarted 
           label="Get started"
-          className="hidden lg:flex"
+          className="hidden lg:flex py-2.5"
         />
       </div>
 

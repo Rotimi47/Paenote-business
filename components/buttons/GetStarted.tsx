@@ -18,7 +18,7 @@ export const GetStarted = ({
   return (
     <button
      onClick={onClick}
-     className={`flex gap-2 py-2.5 pl-2.5 pr-2 rounded-md text-brand-pure font-body font-semibold bg-brand-main-01 ${className}`}
+     className={`flex gap-2  pl-2.5 pr-2 items-center rounded-md text-brand-pure font-body font-semibold bg-brand-main-01 ${className}`}
     >
         {label}
         <IconArrowRight
