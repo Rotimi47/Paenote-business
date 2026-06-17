@@ -20,19 +20,19 @@ export default function Testimonials() {
       <div className="absolute inset-x-0 bottom-0 h-242 bg-linear-to-b from-[rgba(0,92,109,0)] to-brand-main-02" />
 
       {/* Content */}
-      <div className="relative flex w-full max-w-4xl flex-col items-start gap-12">
+      <div className="relative flex  max-w-4xl flex-col items-start gap-12">
         <h2 className="font-heading text-[32px] leading-[1.05] lg:text-5xl">
           Built for
           <br />
           Business Owners
         </h2>
 
-        <div className="flex w-full flex-col gap-6">
+        <div className="flex  flex-col gap-6   bg-red-900">
           
-          <div className="flex w-full flex-col gap-4 lg:flex-row lg:items-center">
+          <div className="flex  flex-col gap-4 lg:flex-row lg:items-center">
             
             {/* Quote Card */}
-            <div className="bg-brand-text-teal p-6 flex flex-col gap-12 rounded-xl max-w-85.75 lg:max-w-148 lg:justify-between xl:p-7.5">
+            <div className="w-full bg-brand-text-teal p-6 flex flex-col gap-12 rounded-xl max-w-85.75 lg:max-w-148 lg:justify-between xl:p-7.5">
               <Image
                 src="/icons/quoteIcon.svg"
                 alt="Quote"
@@ -48,16 +48,17 @@ export default function Testimonials() {
             </div>
 
             {/* Person Card */}
-            <div className="relative h-85.75 w-full overflow-hidden rounded-[20px] lg:w-85.75">
+            <div className=" w-full lg:w-85.75">
               <Image
                 src="/images/ceoTrader.svg"
                 alt="Trader"
-                fill
+                width={343}
+                height={343}
                 priority
-                className="object-cover"
+                
               />
 
-              <div className="absolute inset-0 bg-linear-to-b from-transparent to-[rgba(0,92,109,0.2)]" />
+              {/* <div className="absolute inset-0 bg-linear-to-b from-transparent to-[rgba(0,92,109,0.2)]" /> */}
 
             
             </div>
