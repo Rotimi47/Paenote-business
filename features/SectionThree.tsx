@@ -8,7 +8,7 @@ export default function SectionThree() {
         <div className="flex flex-col gap-16 lg:gap-12">  
             <div className="flex flex-col gap-6 items-center lg:flex-row lg:justify-between lg:max-w-300 lg:items-end">
                 <div>
-                    <h1 className="font-heading text-4xl text-center leading-105  lg:text-5xl lg:text-start ">Everything your <br/> business needs to grow</h1>
+                    <h1 className="font-heading text-4xl text-center leading-105 lg:text-[32px] xl:text-5xl lg:text-start ">Everything your <br/> business needs to grow</h1>
                 </div>
                 <div className="flex gap-2 ">
                     <GetStarted
