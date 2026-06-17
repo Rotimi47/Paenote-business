@@ -27,7 +27,7 @@ export default function Testimonials() {
           Business Owners
         </h2>
 
-        <div className="flex  flex-col gap-6   bg-red-900">
+        <div className="flex  flex-col gap-6">
           
           <div className="flex  flex-col gap-4 lg:flex-row lg:items-center">
             
