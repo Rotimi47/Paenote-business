@@ -30,6 +30,7 @@ export default function Navbar() {
   }, []);
   return (
     <nav className="w-full flex py-6 px-5 lg:px-27.5 justify-between items-center 2xl:max-w-380 2xl:mx-auto">
+      
       <div><Link href="/"> <Image src="/icons/PaeLogo.svg" alt="company-logo"  width={110} height={24} priority/> </Link></div>
       <div className="hidden lg:flex">
         <ul className="flex gap-12 font-body text-neutral-400">

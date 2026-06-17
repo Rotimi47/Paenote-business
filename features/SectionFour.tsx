@@ -13,7 +13,7 @@ export default function SectionFour() {
         setOpenIndex(openIndex === index ? null : index);
     };
   return (
-    <div className="w-full mx-auto 2xl:max-w-380 2xl:mx-auto bg-brand-pure pt-20 px-4  lg:py-40 flex flex-col gap-35 lg:rounded-b-[64px]">
+    <div className="w-full mx-auto  2xl:mx-auto bg-brand-pure pt-20 px-4  lg:py-40 flex flex-col gap-35 lg:rounded-b-[64px]">
         <div className="flex flex-col gap-12 ">
             <div className="flex flex-col gap-4">
                 <h1 className="font-heading text-[32px] text-neutral-950 text-center font-semibold leading-105 ">

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutHero() {
   return (
-    <div className=" mx-2 2xl:max-w-380 2xl:mx-auto bg-about px-4 py-8 lg:px-27.5 lg:pt-40 lg:pb-20 rounded-t-4xl">
+    <div className=" mx-2  bg-about px-4 py-8 lg:px-27.5 lg:pt-40 lg:pb-20 rounded-t-4xl">
       <div className="flex flex-col gap-20 lg:gap-40"> 
         <div className="flex flex-col gap-8 w-full mx-auto max-w-4xl">
           <h1 className="text-brand-pure font-heading text-4xl lg:text-h1 leading-105 tracking-[0.01em]">Built for the businesses <br/> moving Africa forward</h1>
